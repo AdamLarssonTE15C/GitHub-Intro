@@ -4,6 +4,8 @@ import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.input.KeyCode;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 
 public class main extends Application{
@@ -18,6 +20,14 @@ public class main extends Application{
 		
 		stage.setScene(scene);
 		stage.show();
+		
+		Circle cir = new Circle(60);
+		cir.setTranslateX(250);
+		cir.setTranslateY(250);
+		cir.setFill(Color.BLACK);
+		
+		root.getChildren().addAll(cir);
+		
 		
 		scene.setOnKeyPressed(event->{
 			
